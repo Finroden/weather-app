@@ -102,7 +102,6 @@ body {
 
 .details {
     display: block;
-    justify-content: space-around;
     font-size: 0.9rem;
     color: #666;
     text-align: justify;
@@ -116,12 +115,27 @@ body {
 }
 
 .details > div::before {
-    content: attr(class);
     font-weight: 700;
     margin-bottom: 4px;
-    text-transform: capitalize;
     color: #0077ff;
     font-size: 0.8rem;
+    display: block;
+}
+
+.humidity::before {
+    content: "Humidity";
+}
+
+.wind-speed::before {
+    content: "Wind speed";
+}
+
+.pressure::before {
+    content: "Pressure";
+}
+
+.perceived-temp::before {
+    content: "Perceived temperature";
 }
 
 .instructions {
